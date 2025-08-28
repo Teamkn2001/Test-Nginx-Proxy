@@ -1,0 +1,9 @@
+services:
+  frontend:
+    # build:
+    #   context: ./web
+    #   args:
+    #     VITE_REDIRECT_URL: ${VITE_REDIRECT_URL:-https://172.30.11.52/example}
+    image: test-client:latest
+    ports:
+      - "8010:80"

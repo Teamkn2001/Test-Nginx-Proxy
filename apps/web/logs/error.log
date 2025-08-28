@@ -1,0 +1,17 @@
+2025/08/28 08:51:11 [emerg] 1#1: "upstream" directive is not allowed here in /etc/nginx/nginx.conf:40
+2025/08/28 08:53:22 [emerg] 1#1: "upstream" directive is not allowed here in /etc/nginx/nginx.conf:40
+2025/08/28 08:58:19 [warn] 1#1: duplicate MIME type "text/html" in /etc/nginx/nginx.conf:42
+2025/08/28 09:44:43 [warn] 1#1: duplicate MIME type "text/html" in /etc/nginx/nginx.conf:52
+2025/08/28 09:44:43 [warn] 1#1: duplicate MIME type "text/html" in /etc/nginx/nginx.conf:71
+2025/08/28 10:20:35 [error] 20#20: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "GET /test/ HTTP/1.1", upstream: "http://172.20.0.3:8010/", host: "localhost"
+2025/08/28 10:20:40 [error] 20#20: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "GET /test/ HTTP/1.1", upstream: "http://172.20.0.3:8010/", host: "localhost"
+2025/08/28 10:21:22 [error] 20#20: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "GET /test/ HTTP/1.1", upstream: "http://172.20.0.3:8010/", host: "localhost"
+2025/08/28 10:21:23 [error] 20#20: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "GET /test/ HTTP/1.1", upstream: "http://172.20.0.3:8010/", host: "localhost"
+2025/08/28 10:21:23 [error] 20#20: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "GET /test/ HTTP/1.1", upstream: "http://172.20.0.3:8010/", host: "localhost"
+2025/08/28 10:21:23 [error] 20#20: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "GET /test/ HTTP/1.1", upstream: "http://172.20.0.3:8010/", host: "localhost"
+2025/08/28 10:21:23 [error] 20#20: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "GET /test/ HTTP/1.1", upstream: "http://172.20.0.3:8010/", host: "localhost"
+2025/08/28 10:21:24 [error] 20#20: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "GET /test/ HTTP/1.1", upstream: "http://172.20.0.3:8010/", host: "localhost"
+2025/08/28 10:21:24 [error] 20#20: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "GET /test/ HTTP/1.1", upstream: "http://172.20.0.3:8010/", host: "localhost"
+2025/08/28 10:21:24 [error] 20#20: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "GET /test/ HTTP/1.1", upstream: "http://172.20.0.3:8010/", host: "localhost"
+2025/08/28 10:21:24 [error] 20#20: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "GET /test/ HTTP/1.1", upstream: "http://172.20.0.3:8010/", host: "localhost"
+2025/08/28 10:21:24 [error] 20#20: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: localhost, request: "GET /test/ HTTP/1.1", upstream: "http://172.20.0.3:8010/", host: "localhost"
