@@ -1,12 +1,15 @@
 FROM nginx:alpine
 
-# Remove default configuration
+# Remove default config
 RUN rm /etc/nginx/conf.d/default.conf
 
-# Copy custom configuration
+# Copy your nginx configuration
 COPY nginx.conf /etc/nginx/nginx.conf
 
-# Create logs directory
+# Create log directory
 RUN mkdir -p /var/log/nginx
 
+# Expose port 80
 EXPOSE 80
+
+CMD ["nginx", "-g", "daemon off;"]

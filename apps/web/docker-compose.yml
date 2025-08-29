@@ -1,16 +1,15 @@
-version: '3.8'
-
 services:
   nginx-proxy:
-    build: ./nginx
-    container_name: main-nginx-proxy
+    build:
+      context: ./nginx
     ports:
-      - "80:80"
+      - "8844:8004"
     volumes:
-      - ./logs:/var/log/nginx
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+    restart: unless-stopped
     networks:
-      - app-network
+      - shared-network
 
 networks:
-  app-network:
-    driver: bridge
+  shared-network:
+    external: true

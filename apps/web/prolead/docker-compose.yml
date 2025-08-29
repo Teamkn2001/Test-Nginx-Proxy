@@ -13,8 +13,6 @@ services:
       - AI_API_KEY=ai-serviceDtIKlb5a6Fqy9jcKkleyB0cmnN1RVtTt
     depends_on:
       - backend
-    networks:
-      - app-network
 
   backend:
     # build: ./api
@@ -33,27 +31,21 @@ services:
       - USER_ADMIN=admin
       - USER_ADMIN_PASSWORD=admin123
       - PROLEAD_API_URL=http://host.docker.internal:8080
-    networks:
-      - app-network
+
+  # revese-proxy:
+  #   image: nginx:latest
+  #   volumes:
+  #     - ./nginx:/etc/nginx/conf.d
+  #   ports:
+  #     - "4000:80"
+
+  #   healthcheck:
+  #     test: ["CMD", "curl", "-f", "http://localhost:4000"]
+  #     interval: 1m30s
+  #     timeout: 10s
+  #     retries: 3
+  #   restart: always
 
 networks:
-  app-network:
-    driver: bridge
-#   revese-proxy:
-#     image: nginx:latest
-#     volumes:
-#       - ./nginx:/etc/nginx/conf.d
-#     ports:
-#       - "4000:80"
-
-#     healthcheck:
-#       test: ["CMD", "curl", "-f", "http://localhost:4000"]
-#       interval: 1m30s
-#       timeout: 10s
-#       retries: 3
-#     restart: always
-# networks:
-#   default:
-#     driver: bridge
-
-
+  shared-network:
+    external: true
